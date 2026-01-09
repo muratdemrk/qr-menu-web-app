@@ -10,25 +10,21 @@
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
 }
-
 :root {
     --bg-color: #ffffff;
     --second-bg-color: #cf810c;
     --text-color: #000000;
     --main-color: #cf810c;
 }
-
 html {
     font-size: 62.5%;
     overflow-x: hidden;
 }
-
 body {
     background: var(--bg-color);
     color: var(--text-color);
     padding-top: 1rem;
 }
-
 .header {
     position: fixed;
     top: 0;
@@ -42,29 +38,23 @@ body {
     z-index: 100;
     transition: top 0.3s ease;
 }
-
 .header.hide {
     top: -100px; 
     position: fixed;
     width: 100%;
     z-index: 10;
 }
-
-
 .header.sticky {
     background: var(--bg-color);
 }
-
 .logo {
     font-size: 2.5rem;
     color: var(--text-color);
     font-weight: 600;
 }
-
 .navbar {
     position: relative;
 }
-
 .navbar a {
     font-size: 1.7rem;
     color: var(--text-color);
@@ -72,17 +62,14 @@ body {
     margin-left: 3.5rem;
     transition: 0.3s;
 }
-
 .navbar a:hover,
 .navbar a.active {
     color: var(--main-color);
 }
-
 section {
     min-height: 100vh;
     padding: 10rem 9% 2rem;
 }
-
 .card .heading{
     margin-bottom: 4rem;
     font-size:  3rem;
@@ -90,8 +77,6 @@ section {
     align-items: center;
     justify-content: center;
 }
-
-
 .card-container {
     display: flex;
     flex-direction: column; 
@@ -99,7 +84,6 @@ section {
     align-items: center;
     margin-top: 2rem;
 }
-
 .card-box {
     display: flex;
     align-items: center;
@@ -111,7 +95,6 @@ section {
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
     margin-bottom: 2rem; 
 }
-
 .image-container {
     width: 100px;
     height: 100px;
@@ -119,20 +102,17 @@ section {
     overflow: hidden;
     margin-right: 1.5rem;
 }
-
 .image-container img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-
 .content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
 }
-
 .content h4 {    
     font-size: 2rem;
     color: white;   
@@ -143,13 +123,11 @@ section {
     font-size: 1.4rem;
     color: white;
     margin: 7rem 5rem 0 0;
-    
 }
 .content span {
     font-size: 2rem;
     color: white;
 }
-
 .chocolate-info {
     text-align: center;
     margin-top: 2rem;
@@ -157,25 +135,19 @@ section {
     font-weight: bold;
     color: var(--text-color); 
 }
-
 .chocolate-info p {
     border-top: 1px solid #000; 
     padding-top: 1rem; 
 }
-
-
-/* Mobil cihazlar için düzenleme */
 @media (max-width: 768px) {
     .card-box {
         flex-direction: row; 
         text-align: left;
         padding: 2rem;
     }
-
     .image-container {
         margin-right: 1.5rem;
     }
-
     .content {
         justify-content: space-between;
         flex-direction: row;
@@ -194,28 +166,21 @@ section {
     .content p {
         font-size: 0.9rem;
         color: white;
-        
     }
 }
-
-
 #menu-icon {
     display: none;    
     font-size: 3.6rem;
     cursor: pointer;
 }
-
-
 @media (max-width: 600px) {
     .navbar {
         display: none; 
         flex-direction: column; 
     }
-    
     #menu-icon {
         display: block; 
     }
-    
     .navbar.active {
         display: flex; 
         position: absolute;
@@ -225,7 +190,6 @@ section {
         width: 100%;
         padding: 1rem 0;
     }
-
     .navbar a {
         padding: 1rem;
         text-align: center;

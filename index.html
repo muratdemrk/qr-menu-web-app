@@ -1,96 +1,102 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Menu</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Konalga | Menü</title>
 
-  <link rel="stylesheet" href="css/style.css?v=1.0">
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- ICON -->
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
   <link rel="icon" type="image/png" href="images/faviconlar/index.png">
 </head>
 
 <body>
 
-  <!-- HEADER -->
-  <header class="header">
-    <a href="index.html" class="logo">Konalga.</a>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="nav-left">Konalga</div>
 
-    <div id="menu-icon" class="menu-icon">
-      <i class="bx bx-menu"></i>
-    </div>
-
-    <nav class="navbar">
-      <a href="#">health-flavor-pleasure.</a>
-      <span class="active-nav"></span>
+    <nav class="nav-links">
+      <a href="#">Menu</a>
+      <a href="./pages/hakkimizda.html">Hakkımızda</a>
+      <a href="./pages/iletisim.html">İletişim</a>
     </nav>
   </header>
 
-  <!-- MENU SECTION -->
-  <section class="card" id="card">
-    <div class="menu-section">
+  <!-- MAIN -->
+  <main class="wrapper">
 
-      <h1 class="menu-title">Menü</h1>
+    <h1 class="page-title">Menümüz</h1>
+    <p class="page-subtitle">Doğal, taze ve özenle hazırlanmış lezzetler</p>
 
-      <div class="card-container">
+    <!-- CARDS -->
+    <section class="menu-grid">
 
-        <div class="card-box meals">
-          <a href="components/yemekler.html">
-            <img src="images/ana_sayfa/yemekler.jpg" alt="Yemekler">
-            <h4 class="bottom-left">Yemekler</h4>
-          </a>
+      <a href="components/yemekler.html" class="menu-card">
+        <img src="images/ana_sayfa/yemekler.jpg" alt="Yemekler">
+        <div class="card-text">
+          <h3>Yemekler</h3>
+          <span>Ana yemekler & özel tarifler</span>
         </div>
+      </a>
 
-        <div class="card-box deserts">
-          <a href="components/tatlilar.html">
-            <img src="images/ana_sayfa/tatlılar.jpg" alt="Tatlılar">
-            <h4 class="bottom-left">Tatlılar</h4>
-          </a>
+      <a href="components/tatlilar.html" class="menu-card">
+        <img src="images/ana_sayfa/tatlılar.jpg" alt="Tatlılar">
+        <div class="card-text">
+          <h3>Tatlılar</h3>
+          <span>Günlük ve ev yapımı</span>
         </div>
+      </a>
 
-        <div class="card-box hot-drinks">
-          <a href="components/sicakicecekler.html">
-            <img src="images/ana_sayfa/sicak_icecekler.jpg" alt="Sıcak İçecekler">
-            <h4 class="bottom-left">Sıcak İçecekler</h4>
-          </a>
+      <a href="components/sicakicecekler.html" class="menu-card">
+        <img src="images/ana_sayfa/sicak_icecekler.jpg" alt="Sıcak İçecekler">
+        <div class="card-text">
+          <h3>Sıcak İçecekler</h3>
+          <span>Kahve & çay çeşitleri</span>
         </div>
+      </a>
 
-        <div class="card-box herbal-teas">
-          <a href="components/bitkicaylari.html">
-            <img src="images/ana_sayfa/bitki_caylari.jpg" alt="Bitki Çayları">
-            <h4 class="bottom-left">Bitki Çayları</h4>
-          </a>
+      <a href="components/bitkicaylari.html" class="menu-card">
+        <img src="images/ana_sayfa/bitki_caylari.jpg" alt="Bitki Çayları">
+        <div class="card-text">
+          <h3>Bitki Çayları</h3>
+          <span>Doğal ve dinlendirici</span>
         </div>
+      </a>
 
-        <div class="card-box coctails">
-          <a href="components/mesrubatlar.html">
-            <img src="images/ana_sayfa/kutu_icecekler.jpeg" alt="Meşrubatlar">
-            <h4 class="bottom-left">Meşrubatlar</h4>
-          </a>
+      <a href="components/mesrubatlar.html" class="menu-card">
+        <img src="images/ana_sayfa/kutu_icecekler.jpeg" alt="Meşrubatlar">
+        <div class="card-text">
+          <h3>Meşrubatlar</h3>
+          <span>Soğuk içecekler</span>
         </div>
+      </a>
 
-        <div class="card-box smoothies">
-          <a href="components/smoothieler.html">
-            <img src="images/ana_sayfa/smoothie.jpg" alt="Smoothieler">
-            <h4 class="bottom-left">Smoothieler</h4>
-          </a>
+      <a href="components/smoothieler.html" class="menu-card">
+        <img src="images/ana_sayfa/smoothie.jpg" alt="Smoothieler">
+        <div class="card-text">
+          <h3>Smoothieler</h3>
+          <span>Taze meyvelerle</span>
         </div>
+      </a>
 
-      </div>
+    </section>
 
-      <!-- QR SECTION -->
-      <section class="qr-section">
-        <div class="qr-container">
-          <h2>Menüyü Telefonundan Aç</h2>
-          <p>Mobil cihazından kolayca erişmek için QR kodu tara.</p>
-          <img src="images/qr-kod.png" alt="QR Kod" class="qr-img">
-        </div>
-      </section>
+    <!-- QR -->
+    <section class="qr-area">
+      <h2>QR Menü</h2>
+      <p>Telefonundan hızlıca menüyü aç</p>
+      <img src="images/qr-kod.png" alt="QR Kod">
+    </section>
 
-    </div>
-  </section>
+  </main>
 
-  <script src="js/script.js"></script>
 </body>
-
 </html>
